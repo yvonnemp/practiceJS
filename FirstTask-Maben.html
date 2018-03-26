@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<center>
+
+<h2>Addition</h2>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+  
+
+
+function myFunction() {
+    var txt;
+    var person = prompt("Enter First Number");
+    var person1 = prompt("Enter Second number");
+    if (person == null || person == "" , person1 == null || person1 == "") {
+        txt = "User cancelled";
+    } else {
+        txt = "Answer is " + (parseInt(person)+parseInt(person1));
+
+
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+</script>
+</center>
+</body>
+</html>
